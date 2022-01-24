@@ -169,3 +169,9 @@ alias dfl="dotfiles"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+# ----------------------------------------
+# JAVA_HOME
+# ----------------------------------------
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=${JAVA_HOME}/bin:$PATH
